@@ -1,0 +1,194 @@
+html {
+    font-family:'HelveticaNeue', 'Roboto', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html, body, #__nuxt {
+    height: 100vh;
+    background-color: #0D0628;
+}
+
+footer {
+    border-top-width: 2px;
+    position: sticky;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:gray;
+}
+
+.border-gray-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(75 85 99 / var(--tw-border-opacity)) /* #4b5563 */;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    padding: 8px;
+    gap: 10px;
+
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+/* navbar starts here */
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0)10%, rgba(13, 6, 40, 1)100%), url("/assets/images/Lisboa.jpg");
+    height: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.navbar {
+    height: 2.5rem;
+    width: 100%;
+    background-color: hsla(252, 74%, 9%, 0.3);
+    border-radius: 20px 10px;
+    padding: 2rem;
+    backdrop-filter: blur(20px);
+    transition: box-shadow 1s ;
+}
+
+.crossbar {
+    height: 2rem;
+    border-width: 2px;
+    border-color: rgb(254 249 195 0.3);
+}
+
+.navbar:hover{
+    box-shadow: 0 3px 70px 8px rgb(250, 3, 3);
+}
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+}
+
+.nuxtlink{
+    color:#0D0628;
+    transition:color 1s;
+}
+
+.nuxtlink:hover, .contactMe:hover{
+    color: rgb(250, 3, 3);
+    cursor: pointer;
+}
+
+.nuxtlink:active {
+    color: yellow;
+}
+
+
+.contactMe{
+    background-color: aqua;
+    border-radius: 30px;
+    padding: 10px;
+    transition: color 1s;
+    transition: background-color 1s;
+
+}
+
+.contactMe:hover{
+    background-color: blue;
+}
+
+.contactMe:active{
+background-color: orange;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .navbar {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* navbar ends here */
+
+/* Scroll bar starts here */
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, rgb(254, 249, 195)0%, rgba(13, 6, 40, 1)100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 1000vh black;
+    border-radius: 10px;
+}
+/* Scroll bar ends here */
+
+.title {
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    letter-spacing: 20px;
+    color: yellow;
+    padding-top: 4rem;
+    justify-content: center;
+}
+
+/* Shadows skills start here */
+.learning:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px rgb(59 130 246);
+    color: rgb(59 130 246);
+}
+
+.learning-basic:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px linear-gradient(to bottom right, rgb(59 130 246), rgb(34 197 94));
+    color: linear-gradient(to bottom right, rgb(59 130 246), rgb(34 197 94));
+}
+
+.basic:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px rgb(34 197 94);
+    color: rgb(34 197 94);
+}
+
+.basic-medium:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px linear-gradient(to bottom right, rgb(34 197 94), rgb(234 179 8)) ;
+    color: linear-gradient(to bottom right, rgb(34, 197, 94,0.5), rgb(234 179 8));
+}
+
+.medium:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px rgb(234 179 8);
+    color: rgb(234 179 8);
+}
+
+.medium-advanced:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px linear-gradient(to bottom right,rgb(234 179 8), rgb(239 68 68));
+    color: linear-gradient(to bottom right, rgb(234 179 8), rgb(239 68 68));
+}
+
+.advanced:hover{
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 10px rgb(239 68 68);
+    color: rgb(239 68 68);
+}
+
+/* Shadows skills end here */
